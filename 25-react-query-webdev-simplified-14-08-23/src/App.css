@@ -1,0 +1,77 @@
+/* Global styles for the entire site */
+body {
+	font-size: 0.8em; /* Adjust the base font size */
+	margin: 0; /* Remove default body margins */
+	padding: 0; /* Remove default body padding */
+}
+
+.container {
+max-width: 1200px; /* Set maximum width for the content */
+margin: 0 auto; /* Center align content and add horizontal margins */
+padding: 20px; /* Add padding around the content */
+}
+
+.button {
+	padding: 5px 5px;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-right: 10px; /* Add margin between buttons */
+	margin-top: 10px; /* Add margin between buttons */
+}
+
+
+
+.post-list {
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+}
+
+/* Style for individual posts */
+.post {
+
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+
+
+}
+
+  /* Style for post title */
+.post h2 {
+	margin-top: 0;
+}
+
+/* Style for post body */
+.post-body {
+	margin: 10px 0;
+}
+
+/* Style for user details */
+.user-details {
+	border: 1px solid #ccc;
+	padding: 20px;
+	background-color: #b81212;
+	border-radius: 5px;
+}
+
+/* Style for user details paragraphs */
+.user-details p {
+	margin: 0.5em 0; /* Adjust spacing between lines */
+}
+
+/* Style for user name */
+.user-email,
+.user-contact,
+.user-company {
+  margin: 5px 0;
+}
+
+
+/* Style for user email */
+.user-email {
+	color: #f8efef;
+}

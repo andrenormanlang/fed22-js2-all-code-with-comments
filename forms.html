@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Forms?!</title>
+</head>
+
+<body>
+
+	<form>
+		<div class="div">
+			<label for="title">Post Title</label>
+			<input type="text" name="title" id="title" value="My Blog Post Title" />
+		</div>
+
+		<div>
+			<label for="content">Post Content</label>
+			<textarea name="content" id="content">This is my post content
+			that can be on multiple lines
+			omg so coooool</textarea>
+		</div>
+
+		<div>
+			<label for="terms">I agree to the terms</label>
+			<input type="checkbox" name="terms" id="terms" value="1">
+
+			<label for="terms">I agree to sell my firstborn</label>
+			<input type="checkbox" name="firstborn" id="firstborn" value="1">
+		</div>
+
+		<div>
+			<fieldset>
+				<legend>I LOVE FORMS</legend>
+
+				<label for="loveforms_yas">YAS</label>
+				<input type="radio" name="loveforms" id="loveforms_yas" value="yas">
+
+				<label for="loveforms_absolutely">ABSOLUTELY</label>
+				<input type="radio" name="loveforms" id="loveforms_absolutely" value="absolutely">
+
+				<label for="loveforms_ofcourse">OFCOURSE</label>
+				<input type="radio" name="loveforms" id="loveforms_ofcourse" value="ofcourse">
+			</fieldset>
+
+			<fieldset>
+				<legend>I LOVE BOOTSTRAP</legend>
+
+				<label for="lovebootstrap_omgyas">OMGYAS</label>
+				<input type="radio" name="lovebootstrap" id="lovebootstrap_omgyas" value="omgyas">
+
+				<label for="lovebootstrap_nope">NOPE</label>
+				<input type="radio" name="lovebootstrap" id="lovebootstrap_nope" value="nope">
+			</fieldset>
+
+			<label for="best_teacher">Select the best teacher</label>
+			<select name="best_teacher" id="best_teacher">
+				<option value="">Choose your champion</option>
+				<option value="1337">Johan</option>
+				<option value="3">Kim</option>
+				<option value="1">Saman</option>
+				<option value="2">Mikko</option>
+				<option value="4">Armina</option>
+			</select>
+		</div>
+
+		<button type="submit">SEND IT!</button>
+	</form>
+
+	<script>
+		document.querySelector("form").addEventListener('submit', function(e) {
+			e.preventDefault()
+
+			const data = new FormData(this)
+			console.log(data)
+		})
+	</script>
+
+</body>
+</html>
+
+

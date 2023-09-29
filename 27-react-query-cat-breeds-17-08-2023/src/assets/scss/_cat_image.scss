@@ -1,0 +1,13 @@
+.cat-image {
+	/* Set regular image size */
+	width: 100%;
+	max-width: 100%;
+  }
+
+  /* Apply smaller size on screens over 768px */
+  @media (min-width: 768px) {
+	.cat-image {
+	  /* Set smaller image size for screens over 768px */
+	  max-width: 30%; /* You can adjust the percentage based on your preference */
+	}
+  }

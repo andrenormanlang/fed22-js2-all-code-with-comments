@@ -1,0 +1,19 @@
+{
+  "todos": [
+    {
+      "title": "Mutate all the 🐢",
+      "completed": false,
+      "id": 8
+    },
+    {
+      "title": "Learn about mutations",
+      "completed": false,
+      "id": 12
+    },
+    {
+      "title": "Learn about query invalidation",
+      "completed": false,
+      "id": 13
+    }
+  ]
+}

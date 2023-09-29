@@ -1,0 +1,54 @@
+@import "bootstrap/scss/bootstrap";
+@import "react-toastify/scss/main";
+@import "toastify";
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 0.75em;
+}
+
+#global-loading-spinner-wrapper {
+	position: absolute;
+	top: 4.5rem;
+	right: 3.5rem;
+}
+
+.loading-spinner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh; /* Adjust the height based on your layout */
+  }
+
+  .loading-spinner .bar-loader {
+	border-color: red;
+  }
+  
+.todolist {
+	.done {
+		color: $success;
+		font-style: italic;
+		text-decoration: line-through;
+	}
+}
+
+.invalid {
+	color: $danger;
+	font-size: 0.875em;
+	margin-top: 0.25rem;
+}
+
+.todolist {
+	.list-group-item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.todo-title {
+		}
+
+		.created {
+			color: $text-muted;
+			font-size: small;
+		}
+	}
+}
